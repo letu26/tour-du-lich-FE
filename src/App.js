@@ -4,10 +4,10 @@ import ScrollToTop from './components/scrolltop';
 
 function App() {
   return (
-   <>
-   <ScrollToTop />
-    <AllRoute />
-   </>
+    <>
+      <ScrollToTop />
+      <AllRoute />
+    </>
   );
 }
 

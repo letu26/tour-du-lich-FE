@@ -108,9 +108,9 @@ function Orders() {
                 </div>
                 <div className="col-6">
                   {item.status === "active" ? (
-                    <div className="infor" style={{ display: "flex", alignItems: "center" }}><IoRadioButtonOnOutline style={{ color: "#28a745", marginRight: 3 }} />Đã duyệt </div>
+                    <div className="infor" style={{ display: "flex", alignItems: "center" }}><IoRadioButtonOnOutline style={{ color: "#28a745", marginRight: 3 }} />Đã thanh toán thành công </div>
                   ) : (
-                    <div className="infor" style={{ display: "flex", alignItems: "center" }}><IoRadioButtonOnOutline style={{ color: "#6f42c1", marginRight: 3 }} />Chờ duyệt </div>
+                    <div className="infor" style={{ display: "flex", alignItems: "center" }}><IoRadioButtonOnOutline style={{ color: "#6f42c1", marginRight: 3 }} />Chờ thanh toán </div>
                   )}
                 </div>
                 <div className="payment">
