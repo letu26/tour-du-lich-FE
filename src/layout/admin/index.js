@@ -37,23 +37,25 @@ function Admin() {
       <div>
         <div className="admin__header">
           <div className="admin__header-menu">
-            <NavLink to="/" >
+            <NavLink to="#" >
               <CiFilter className="icon-header" />
             </NavLink>
-            <NavLink to="/" >
+            <NavLink to="#" >
               <IoMoonOutline className="icon-header" />
             </NavLink>
-            <NavLink to="/" >
+            <NavLink to="#" >
               <IoNotificationsOutline className="icon-header" />
             </NavLink>
-            <NavLink to="/" >
+            <NavLink to="/logout" >
               <FaRegUser className="icon-header" />
             </NavLink>
           </div>
         </div>
         <div className="admin__sidebar">
           <div className="admin__sidebar-logo">
+            <NavLink to="/">
             <img src={logo} alt="" />
+            </NavLink>
           </div>
           <NavLink to="/admin/tourmana" className={navlinkActives}>
             <GrMapLocation className="admin__sidebar-option-icon" />

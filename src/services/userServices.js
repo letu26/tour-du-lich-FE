@@ -24,7 +24,9 @@ export const deluser = async (id) => {
   return result;
 };
 
-
-
+export const changePass = async (options) => {
+  const result = await post("user/changepass", options);
+  return result;
+}
 
 

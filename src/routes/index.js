@@ -17,6 +17,7 @@ import TourManage from "../pages/admin/tourmanagement";
 import CateMana from "../pages/admin/category_manage";
 import Usermana from "../pages/admin/usermanage";
 import Ordermanage from "../pages/admin/ordermanage";
+import Changepass from "../pages/changepass";
 
 export const routers = [
   {
@@ -38,6 +39,10 @@ export const routers = [
       {
         path: "register",
         element: <Register />
+      },
+      {
+        path: "changepass",
+        element: <Changepass />
       },
       {
         path: "/logout",

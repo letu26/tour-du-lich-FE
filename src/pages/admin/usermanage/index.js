@@ -98,7 +98,7 @@ function Usermana() {
                     <td style={{ padding: 10, fontSize: 16 }}>{item.token}</td>
                     <td style={{ padding: 10 }}>{item.isadmin ? (<>Quản trị viên</>) : (<>Người dùng</>)}</td>
                     {item.isadmin ? (<>
-                    
+                    <td style={{ padding: 10, display: "flex", justifyContent: "center", alignItems: "center", height: 47.8}}></td>
                     </>) : <>
                     <td style={{ padding: 10, display: "flex", justifyContent: "center", alignItems: "center" }}>
                       <form onSubmit={handleEdit} onClick={() => handleClickEdit(item)}>

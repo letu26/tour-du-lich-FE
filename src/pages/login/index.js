@@ -1,6 +1,6 @@
 import { login } from "../../services/userServices";
 import { setCookie } from "../../heaper/cookie";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { checkLogin } from "../../actions/login";
 import Swal from 'sweetalert2'
@@ -57,7 +57,7 @@ function Login() {
             <input className="input" type="username" placeholder="Nhập tên đăng nhập" />
             <div className="label">Password</div>
             <input className="input" type="password" placeholder="Nhập mật khẩu" />
-            <a href="/changepass" >Change password</a>
+            <NavLink to="/changepass" >Change password</NavLink>
             <button className="btn-login" type="submit">
               Sign in
             </button>
@@ -65,7 +65,7 @@ function Login() {
           <div className="content-right">
             <div className="title-content">Welcome to login</div>
             <div className="question">Don't have account?</div>
-            <button className="navigate"><a href="/register">Sign Up</a></button>
+            <button className="navigate"><NavLink href="/register">Sign Up</NavLink></button>
           </div>
         </div>
       </div>

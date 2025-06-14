@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { generateToken } from "../../heaper/genarateToken";
 import { register } from "../../services/userServices";
 import Swal from 'sweetalert2'
@@ -66,7 +66,7 @@ function Register() {
           <div className="content-right-register">
             <div className="title-content-register">Welcome to sign up</div>
             <div className="question-register">Have an account?</div>
-            <button className="navigate-register"><a href="/login">Sign In</a></button>
+            <button className="navigate-register"><NavLink to="/login">Sign In</NavLink></button>
           </div>
         </div>
       </div>
