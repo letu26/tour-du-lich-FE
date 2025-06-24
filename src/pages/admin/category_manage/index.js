@@ -100,7 +100,7 @@ function CateMana() {
     e.preventDefault();
     const id = parseInt(e.target[0].value);
     Swal.fire({
-      title: 'Bạn có chắc muốn xóa tour này?',
+      title: 'Bạn có chắc muốn xóa danh mục này?',
       text: 'Hành động này không thể hoàn tác!',
       icon: 'warning',
       showCancelButton: true,
@@ -110,7 +110,7 @@ function CateMana() {
       if (result.isConfirmed) {
         await delcate(id); // Gọi API xóa
         Swal.fire({
-          title: 'Xóa Tour Thành Công!',
+          title: 'Xóa danh mục Thành Công!',
           icon: 'success',
           confirmButtonText: 'OK'
         })
