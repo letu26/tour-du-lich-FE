@@ -32,7 +32,7 @@ function Liked() {
             <div className="row">
               {likedTour.map((item, index) => (
                 <div className="col-6" key={index}>
-                  <NavLink to="/" className="liked-tour-bottom__card">
+                  <NavLink to={"/detail/" + item.slug} className="liked-tour-bottom__card">
                     <div className="liked-tour-bottom__card-img">
                       <img src={item.images} alt="" />
                     </div>
