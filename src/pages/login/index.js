@@ -65,7 +65,7 @@ function Login() {
           <div className="content-right">
             <div className="title-content">Welcome to login</div>
             <div className="question">Don't have account?</div>
-            <button className="navigate"><NavLink href="/register">Sign Up</NavLink></button>
+            <button className="navigate"><NavLink to="/register">Sign Up</NavLink></button>
           </div>
         </div>
       </div>
