@@ -28,13 +28,23 @@ function Orders() {
     e.preventDefault();
     const price = e.target[0].value;
     const orderID = e.target[1].value;
+    const tourID = e.target[2].value;
+    const quantity = e.target[3].value;
+    const email = e.target[4].value;
+    const date = e.target[5].value;
+
     const option = {
       price,
       orderID,
-      userID
+      tourID,
+      userID,
+      quantity,
+      email,
+      date
     }
 
     const response = await payment(option);
+
     if (response) {
       window.location.href = response.payUrl;
     }
@@ -126,6 +136,10 @@ function Orders() {
                       <form onSubmit={handleSubmit}>
                         <input type="number" defaultValue={item.totalPrice} style={{ display: "none" }} />
                         <input type="number" defaultValue={item.id} style={{ display: "none" }} />
+                        <input type="number" defaultValue={item.tourID} style={{ display: "none" }} />
+                        <input type="number" defaultValue={item.quantity} style={{ display: "none" }} />
+                        <input type="text" defaultValue={item.date} style={{ display: "none" }} />
+                        <input type="text" defaultValue={item.email} style={{ display: "none" }} />
                         <button type="submit">Thanh toán</button>
                       </form>
                     </>

@@ -55,7 +55,7 @@ function Usermana() {
       cancelButtonText: 'Hủy'
     }).then(async (result) => {
       if (result.isConfirmed) {
-        await deluser(id); // Gọi API xóa
+        await deluser(id); // Gọi API xóa 
         Swal.fire({
           title: 'Xóa Người Dùng Thành Công!',
           icon: 'success',
