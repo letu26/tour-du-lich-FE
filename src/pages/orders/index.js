@@ -46,7 +46,7 @@ function Orders() {
     const response = await payment(option);
 
     if (response) {
-      window.location.href = response.payUrl;
+      window.location.href = response.order_url;
     }
 
   }
