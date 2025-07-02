@@ -89,7 +89,7 @@ function LayoutDefault() {
                       <div className="icon-phone"><TfiHeadphoneAlt /></div>
                       <div className="contact" >
                         <span className="title">Hotline</span>
-                        <span className="number">0365 491 109</span>
+                        <span className="number">520 1314</span>
                       </div>
                     </div>
                   </li>
