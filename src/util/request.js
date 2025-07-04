@@ -1,4 +1,4 @@
-const API_DOMAIN ="http://localhost:3001/api/" ;
+const API_DOMAIN ="https://tour-du-lich.onrender.com/api/" ;
 
 export const get = async (path) => {
   const response = await fetch(API_DOMAIN + path);
